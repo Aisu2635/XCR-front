@@ -1,36 +1,43 @@
-
 import styled from "styled-components";
-
 
 const Bg = styled.div`
   background-color: #222;
   color: #fff;
-  display: flex; // Add this
-  align-items: center; // Add this
-  justify-content: center; // Add this
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: relative;
-  height: 100vh; // Add this
+  height: 100vh;
 `;
 
 const OverlayText = styled.div`
   position: absolute;
-  top: 40%;
+  top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 150px;
+  transform: translate(-50%, -70%);
+  font-size: 10vw; 
   font-weight: bold;
+  text-align: center;
+`;
+
+const ImageWrapper = styled.div`
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 `;
 
 export default function Featured({}) {
-
   return (
-    <Bg className="justify-center items-center w-screen font-inter">
-      <img
-  src="https://xcr405255.s3.ap-south-1.amazonaws.com/image.png"
-  className="object-fit"
-  alt="Featured Image"
-  style={{maxWidth: '100%', maxHeight: '100%'}} // Add this
-/>
+    <Bg className="font-inter">
+      <ImageWrapper>
+        <img
+          src="https://xcr405255.s3.ap-south-1.amazonaws.com/image.png"
+          alt="Featured Image"
+          style={{ width: "100%", height: "100%", objectFit: "cover" }}
+        />
+      </ImageWrapper>
       <OverlayText>XCR</OverlayText>
     </Bg>
   );

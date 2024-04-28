@@ -13,6 +13,12 @@ const Logo = styled(Link)`
   text-decoration:none;
   position: relative;
   z-index: 3;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+  @media screen and (min-width: 768px) {
+    font-size: 24px;
+  }
 `;
 const Wrapper = styled.div`
   display: flex;
@@ -69,7 +75,7 @@ export default function Header() {
     <StyledHeader>
       <Center>
         <Wrapper>
-          <Logo href={'/'}>XCR Store</Logo>
+          <Logo href={'/'}>XCR Tech Wear Store</Logo>
           <StyledNav mobileNavActive={mobileNavActive}>
             <NavLink href={'/'}>Home</NavLink>
             <NavLink href={'/products'}>All products</NavLink>

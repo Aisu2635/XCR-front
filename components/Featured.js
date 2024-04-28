@@ -14,8 +14,8 @@ const OverlayText = styled.div`
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -70%);
-  font-size: 10vw; 
+  transform: translate(-50%, -300%);
+  font-size : 80px; 
   font-weight: bold;
   text-align: center;
 `;
@@ -26,6 +26,7 @@ const ImageWrapper = styled.div`
   left: 0;
   width: 100%;
   height: 100%;
+  filter: blur(1px);
 `;
 
 export default function Featured({}) {

@@ -19,8 +19,8 @@ jobs:
         with:
           aws_access_key: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws_secret_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          application_name: Ip-mini
-          environment_name: Ip-mini-env
+          application_name: XCR
+          environment_name: XCR-env
           version_label: ${{ github.sha }}
           existing_bucket_name: elasticbeanstalk-ap-south-1-654654560061
           region: ap-south-1
